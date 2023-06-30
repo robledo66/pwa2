@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas a Mirar</title>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+              console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch(function(error) {
+              console.log('Error al registrar el Service Worker:', error);
+            });
+        });
+      }
+    </script>
+    
+    <link rel="stylesheet" href="watchlist.css">
+</head>
+
+<body>
+    <header>
+        <h1>Películas a Mirar</h1>
+        <nav>
+            <a href="index.html">Volver al Buscador</a>
+        </nav>
+    </header>
+
+    <div id="watchlist-container"></div>
+
+    <script src="watchlist.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

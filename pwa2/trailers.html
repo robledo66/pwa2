@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Trailers</title>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+              console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch(function(error) {
+              console.log('Error al registrar el Service Worker:', error);
+            });
+        });
+      }
+    </script>
+    
+    <link rel="stylesheet" href="trailer.css">
+    <script src="trailer.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Vistas</button>
+                <div class="dropdown-content">
+                    <a href="watchlist.html">Películas a Mirar</a>
+                    <a href="trailer.html">Trailers</a>
+                    <!-- Agrega más enlaces aquí según tus necesidades -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Buscador de Trailers</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar trailer...">
+            <button type="submit" id="search-button">Buscar</button>
+        </form>
+        <div id="results-container"></div>
+    </div>
+
+    <script src="trailer.js"></script>
+</body>
+
+</html>

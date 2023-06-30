@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fed648;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 24px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logo-container{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.logo-container img {
+  width: 100px;
+  height: auto;
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #171f28;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1ab851;
+}
+
+#results-container {
+    text-align: left;
+}
+/* Estilos para el botón "Agregar a Películas a Mirar" */
+.button-add-to-watchlist {
+    background-color: #518553; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 8px 16px; /* Espacio interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Mostrar como elemento en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 10px; /* Espacio superior */
+    cursor: pointer; /* Cambio de cursor al pasar el mouse */
+  }
+  
+  .button-add-to-watchlist:hover {
+    background-color: #234338; /* Cambio de color de fondo al pasar el mouse */
+  }
+
+
+  /* Estilos para pantallas más pequeñas (hasta 768px) */
+@media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+        
+      
+        body {
+          font-size: 14px;
+        }
+      
+        .container {
+          width: 90%;
+          margin: 0 auto;
+        }
+      
+        .menu {
+          display: none;
+        }
+      
+      
+        .sidebar {
+          order: 2;
+        }
+      
+        .main-content {
+          order: 1;
+        }
+      } }
+  
+  /* Estilos para pantallas medianas (hasta 992px) */
+  @media screen and (max-width: 992px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        
+       body{   font-size: 16px;
+        }
+      
+        .container {
+          width: 80%;
+          margin: 0 auto;
+        }
+      
+        .menu {
+          display: block;
+        }
+      
+        
+        .sidebar {
+          order: 1;
+        }
+      
+        .main-content {
+          order: 2;
+        }
+      }
+  
+  
+  /* Estilos para pantallas grandes (a partir de 1200px) */
+  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1024px) {
+        
+        body {
+          font-size: 18px;
+        }
+      
+        .container {
+          width: 70%;
+          margin: 0 auto;
+        }
+      
+        .menu {
+          display: block;
+        }
+      .sidebar{
+          order: 1;
+        }
+      
+        .main-content {
+          order: 2;
+        }
+      }
+    }
+  
+  }

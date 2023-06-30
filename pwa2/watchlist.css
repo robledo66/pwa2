@@ -1,0 +1,156 @@
+/* watchlist.css */
+
+body {
+    background-color: #ffca3a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  #watchlist-container {
+    padding: 20px;
+  }
+  
+  .movie {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .movie h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .movie img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .movie button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .movie button:hover {
+    background-color: #555;
+  }
+  
+nav a {
+    color: #c9bcbc;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 5px rgba(187, 178, 178, 0.832);
+  }
+  /* Estilos para pantallas más pequeñas (hasta 768px) */
+@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+      
+    
+      body {
+        font-size: 14px;
+      }
+    
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+    
+      .menu {
+        display: none;
+      }
+    
+    
+      .sidebar {
+        order: 2;
+      }
+    
+      .main-content {
+        order: 1;
+      }
+    } }
+
+/* Estilos para pantallas medianas (hasta 992px) */
+@media screen and (max-width: 992px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+      
+     body{   font-size: 16px;
+      }
+    
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+    
+      .menu {
+        display: block;
+      }
+    
+      
+      .sidebar {
+        order: 1;
+      }
+    
+      .main-content {
+        order: 2;
+      }
+    }
+
+
+/* Estilos para pantallas grandes (a partir de 1200px) */
+@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1024px) {
+      
+      body {
+        font-size: 18px;
+      }
+    
+      .container {
+        width: 70%;
+        margin: 0 auto;
+      }
+    
+      .menu {
+        display: block;
+      }
+    .sidebar{
+        order: 1;
+      }
+    
+      .main-content {
+        order: 2;
+      }
+    }
+  }
+
+}

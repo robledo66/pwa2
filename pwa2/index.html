@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Películas</title>
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(function(registration) {
+                console.log('Service Worker registrado con éxito:', registration);
+              })
+              .catch(function(error) {
+                console.log('Error al registrar el Service Worker:', error);
+              });
+          });
+        }
+      </script>
+      
+    <script src="watchlist.js"></script>
+   
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Vistas</button>
+                <div class="dropdown-content">
+                    <a href="watchlist.html">Películas a Mirar</a>
+                    <a href="trailers.html">Trailers</a>
+                    <!-- Agrega más enlaces aquí según tus necesidades -->
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="header">
+    <div class="logo-container">
+        <h1>DudeView</h1> 
+        <img src="pipoca.png" alt="Logo de DudeView">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar película...">
+            <button type="submit" id="search-button">Buscar</button>
+        </form>
+      
+        <div id="results-container"></div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
